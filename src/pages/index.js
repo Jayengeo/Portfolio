@@ -2,6 +2,7 @@ import Head from "next/head";
 import Layouts from "../components/Layouts";
 import Image from "next/image";
 import profilePic from "../../public/images/profile/Home-page.png";
+import AnimatedText from "../components/AnimatedText";
 
 export default function Home() {
   return (
@@ -16,9 +17,12 @@ export default function Home() {
             <div className="w-1/2">
               <Image src={profilePic} alt="jacky" className="w-full h-auto" />
             </div>
-            <div className= "w-1/2">
-              <h1>Turning Visions Into Reality with Code and Design</h1>
-              <p>
+            <div className="w-1/2 flex flex-col item-center self-center">
+              <AnimatedText
+                text="Turning Visions Into Reality With Code And Design."
+                className="!text-6x1 !text-left "
+              />
+              <p className="my-4 text-base font-medium">
                 As a skilled full-stack developer, I am dedicated to turning
                 ideas into innovative web applications. Explore my latest
                 projects and articles, showcasing my expertise in React.js and
