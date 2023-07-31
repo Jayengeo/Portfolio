@@ -25,8 +25,7 @@ export default function Home() {
               <p className="my-4 text-base font-medium">
                 As a skilled full-stack developer, I am dedicated to turning
                 ideas into innovative web applications. Explore my latest
-                projects and articles, showcasing my expertise in React.js and
-                web development.
+                projects showcasing my expertise in web development!
               </p>
             </div>
           </div>
