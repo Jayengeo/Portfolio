@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import AnimatedText from "../components/AnimatedText";
 import Layouts from "../components/Layouts";
-import ProfilePic from "../../public/images/profile/Headshot2 (2).jpg";
+import ProfilePic from "../../public/images/profile/Mind map-pana.png";
 import Image from "next/image";
 const about = () => {
   return (

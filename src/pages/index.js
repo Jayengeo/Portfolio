@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layouts from "../components/Layouts";
 import Image from "next/image";
-import profilePic from "../../public/images/profile/Home-page.png";
+import profilePic from "../../public/images/profile/Programming-pana.png";
 import AnimatedText from "../components/AnimatedText";
 
 export default function Home() {
