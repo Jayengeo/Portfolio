@@ -4,6 +4,7 @@ import Logo from "./Logo";
 import { useRouter } from "next/router";
 import { GithubIcon, LinkedInIcon } from "./Icons";
 import { motion } from "framer-motion";
+import
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -50,6 +51,10 @@ const NavBar = () => {
         >
           <LinkedInIcon />
         </motion.a>
+      
+      <button>
+
+      </button>
       </nav>
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">
         <Logo />
