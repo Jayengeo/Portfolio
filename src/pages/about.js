@@ -22,7 +22,7 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium">
-                Hello! I'm Jacky 😃 I'm a Fullstack Developer who loves all
+                Hello! Im Jacky 😃 Im a Fullstack Developer who loves all
                 things design 🎨 and technology 🤖. I have a background in
                 Architecture and contrsuction management 🏠 but my most recent
                 endevor was in Tech sales and client success 📈
@@ -38,8 +38,8 @@ const about = () => {
                 dog Toshi 🐕
               </p>
             </div>
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8">
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
+            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light">
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
 
               <Image
                 src={ProfilePic}

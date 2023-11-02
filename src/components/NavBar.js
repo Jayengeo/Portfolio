@@ -30,8 +30,8 @@ const NavBar = () => {
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light ">
       <nav>
         <CustomLink href="/" title="Home" className="mr-4" />
-        <CustomLink href="about" title="About" className="mx-4" />
-        <CustomLink href="projects" title="Projects" className="ml-4" />
+        <CustomLink href="/about" title="About" className="mx-4" />
+        <CustomLink href="/projects" title="Projects" className="ml-4" />
       </nav>
 
       <nav className="flex items-center justify-center flex-wrap ">
@@ -56,7 +56,8 @@ const NavBar = () => {
 
         <button
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
-          className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"} `}
+          className={`ml-3 flex items-center justify-center rounded-full p-1 
+          ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"} `}
         >
           {mode === "dark" ? (
             <SunIcon className={"fill-dark"} />
