@@ -13,7 +13,7 @@ const about = () => {
         <title>Jacky| About Page</title>
         <meta name="description" content="any description" />
       </Head>
-      <main className="flex w-full flex-col items-center justify-center">
+      <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layouts className="pt-16">
           <AnimatedText text="Did you know?" className="mb-16" />
           <div className="grid w-full grid-cols-8 gap-16">
