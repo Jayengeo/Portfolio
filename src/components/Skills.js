@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Skill = ({ name, x, y }) => {
   return (
     <motion.div
-      className="flex items-center justify-center rounded-full font-semibold bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute"
+      className="flex items-center justify-center rounded-full font-semibold bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute dark:text-dark dark:bg-light "
       whileHover={{ scale: 1.05 }}
       initial={{ x: 0, y: 0 }}
       whileInView={{ x: x, y: y }}
@@ -20,9 +20,9 @@ const Skills = () => {
   return (
     <>
       <h2 className="font-bold text-8xl mt-64 w-full text-center">Skills</h2>
-      <div className="w-full h-screen flex items-center justify-center rounded-full bg-circularLight">
+      <div className="w-full h-screen flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark">
         <motion.div
-          className="flex items-center justify-center rounded-full font-semibold bg-dark text-light p-8 shadow-dark cursor-pointer"
+          className="flex items-center justify-center rounded-full font-semibold bg-dark text-light p-8 shadow-dark cursor-pointer dark:text-dark dark:bg-light"
           whileHover={{ scale: 1.05 }}
         >
           Web
@@ -36,7 +36,7 @@ const Skills = () => {
         <Skill name="Ruby" x="15vw" y="15vw" />
         <Skill name="Tailwind CSS" x="-25vw" y="15vw" />
         <Skill name="NodeJS" x="0vw" y="-20vw" />
-        <Skill name="Typescript" x="-25vw" y="15vw" /> 
+        <Skill name="Typescript" x="-25vw" y="15vw" />
         <Skill name="Express" x="-30vw" y="-10vw" />
       </div>
     </>
