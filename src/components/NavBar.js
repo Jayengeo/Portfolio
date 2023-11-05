@@ -144,13 +144,13 @@ const NavBar = () => {
             />
           </nav>
 
-          <nav className="flex items-center justify-center flex-wrap ">
+          <nav className="flex items-center justify-center flex-wrap mt-2 ">
             <motion.a
               href="https://github.com/Jayengeo"
               target={"_blank"}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
-              className="w-6 mx-3 bg-light rounded-full dark:bg-dark "
+              className="w-6 mx-3 sm:mx-1 bg-light rounded-full dark:bg-dark "
             >
               <GithubIcon />
             </motion.a>
@@ -159,14 +159,14 @@ const NavBar = () => {
               target={"_blank"}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
-              className="w-6 mx-3"
+              className="w-6 mx-3 sm:mx-1 "
             >
               <LinkedInIcon />
             </motion.a>
 
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
-              className={`ml-3 flex items-center justify-center rounded-full p-1 
+              className={`ml-3 flex items-center justify-center rounded-full p-1 sm:mx-1 
           ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"} `}
             >
               {mode === "dark" ? (
