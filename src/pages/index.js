@@ -26,7 +26,8 @@ export default function Home() {
             <div className="w-1/2 flex flex-col item-center self-center">
               <AnimatedText
                 text="Hire me please!"
-                className="!text-6x1 !text-left "
+                className="!text-6x1 !text-left 
+                xl:!text-5xl lg:!text-center lg:!text=6xl md:!text-5xl sm:!text-3xl"
               />
               <p className="my-4 text-base font-medium">
                 As a skilled full-stack developer, I am dedicated to turning
@@ -40,3 +41,4 @@ export default function Home() {
     </>
   );
 }
+
