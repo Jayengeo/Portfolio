@@ -15,17 +15,17 @@ const about = () => {
       </Head>
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layouts className="pt-16">
-          <AnimatedText text="Did you know?" className="mb-16" />
+          <AnimatedText text="Did you know?" className="mb-16 lg:!text-7x1 sm:!text-6xl xs:!text-4xl sm:mb-8" />
           <div className="grid w-full grid-cols-8 gap-16">
             <div className="col-span-5 flex flex-col items-start justify-start">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
                 Biography
               </h2>
               <p className="font-medium">
-                Hello! Im Jacky 😃 Im a Fullstack Developer who loves all
-                things design 🎨 and technology 🤖. I have a background in
-                Architecture and contrsuction management 🏠 but my most recent
-                endevor was in Tech sales and client success 📈
+                Hello! Im Jacky 😃 Im a Fullstack Developer who loves all things
+                design 🎨 and technology 🤖. I have a background in Architecture
+                and contrsuction management 🏠 but my most recent endevor was in
+                Tech sales and client success 📈
               </p>
 
               <p className="my-4 font-medium">
