@@ -129,7 +129,7 @@ const projects = () => {
                 github="https://github.com/Jayengeo/Doggo-Dash"
               />
             </div>
-            <div className="col-span-6 ">
+            <div className="col-span-6 sm:col-span-12 ">
               <Project
                 img={project1}
                 title="Doggo Dash"
@@ -139,7 +139,7 @@ const projects = () => {
                 github="https://github.com/Jayengeo/Doggo-Dash"
               />
             </div>
-            <div className="col-span-6 ">
+            <div className="col-span-6 sm:col-span-12 ">
               <Project
                 img={project1}
                 title="Doggo Dash"
