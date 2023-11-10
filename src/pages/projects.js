@@ -117,7 +117,7 @@ const projects = () => {
       </Head>
       <main className="w-full flex flex-col items-center justify-center dark:text-light">
         <Layouts className="pt-16">
-          <AnimatedText text="Check this out" className="mb-16" />
+          <AnimatedText text="Check this out" className="mb-16 lg:!text-7xl sm:mb-8 sm:!text6xl xs:!text-4xl" />
           <div className="grid grid-cols-12 gap-24 gap-y-32">
             <div className="col-span-12 ">
               <FeaturedProject
