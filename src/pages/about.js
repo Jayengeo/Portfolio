@@ -14,7 +14,7 @@ const about = () => {
         <title>Jacky| About Page</title>
         <meta name="description" content="any description" />
       </Head>
-      <TransitionEffect />
+      <TransitionEffect/>
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layouts className="pt-16">
           <AnimatedText text="Did you know?" className="mb-16 lg:!text-7x1 sm:!text-6xl xs:!text-4xl sm:mb-8" />
