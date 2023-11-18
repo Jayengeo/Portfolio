@@ -30,7 +30,8 @@ const about = () => {
               </h2>
               <p className="font-medium">
                 Hello! Im Jacky 😃 Im a Fullstack Developer who loves all things
-                design 🎨 and technology 🤖.  but my most recent endevor was in
+                design 🎨 and technology 🤖.  I have a passion for developing aesthetically pleasing and
+                intuitive applications 📱.  but my most recent endevor was in
                 Tech sales and client success 📈 Im currently an employee at
                 Apple store and I hope to utilize my skills in a developer role.
               </p>
@@ -40,8 +41,8 @@ const about = () => {
               </p>
               
               <p className="my-4 font-medium">
-                I have a passion for developing aesthetically pleasing and
-                intuitive applications 📱.
+              After graduating  I worked for a tech startup company that focused on desinging CRM's for realestate and mortgage brokers. during my time there i worked in
+                Tech sales and client success
               </p>
 
               <p className="my-4 font-medium">
