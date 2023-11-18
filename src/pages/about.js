@@ -46,6 +46,10 @@ const about = () => {
               </p>
 
               <p className="my-4 font-medium">
+               I later came with the idea to combine my passion for design and technology by embarking in developing my coding skills to someday work as a developer
+              </p>
+              
+              <p className="my-4 font-medium">
                 In my spare time, I love to rock climb 🧗 and spend time with my
                 dog Toshi 🐕
               </p>
