@@ -5,6 +5,7 @@ import Layouts from "../components/Layouts";
 import About1 from "../../public/images/profile/Mind map-pana.png";
 import About2 from "../../public/images/profile/Construction costs-pana.png";
 import About3 from "../../public/images/profile/Webinar-pana.png";
+import About4 from "../../public/images/profile/Telecommuting-pana.png";
 import Image from "next/image";
 import Skills from "../components/Skills";
 import TransitionEffect from "../components/TransitionEffect";
@@ -46,7 +47,7 @@ const about = () => {
               </p>
 
               <p className="my-4 font-medium">
-               I later came with the idea to combine my passion for design and technology by embarking in developing my coding skills to someday work as a developer
+               I later came with the idea to combine my passion for design and technology by embarking in developing my coding skills to someday work
               </p>
               
               <p className="my-4 font-medium">
@@ -58,7 +59,7 @@ const about = () => {
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
 
               <Image
-                src={About1}
+                src={About3}
                 alt="jacky"
                 className="w-full h-auto rounded-2xl"
                 priority
@@ -76,13 +77,25 @@ const about = () => {
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
-            </div> 
+            </div>
 
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light  dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
 
               <Image
-                src={About3}
+                src={About4}
+                alt="jacky"
+                className="w-full h-auto rounded-2xl"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            </div>
+
+            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light  dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
+
+              <Image
+                src={About1}
                 alt="jacky"
                 className="w-full h-auto rounded-2xl"
                 priority
