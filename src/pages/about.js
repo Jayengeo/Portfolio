@@ -71,13 +71,11 @@ const about = () => {
             </div>
             <div className="col-span-4 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
               <p className="font-medium">
-                I originally studied architecture while in post secondary and
-                got some hands on experience working for organizations such as
-                Mattamy Homes as a purchaser and as a assitant project manager
-                with the city of mississauga
+               Upon graduating, I had the oportunity to work for a  remote techstart where I worked in tech sales, later transitioning to a client success manager
               </p>
             </div>
 
+            
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light  dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
 
@@ -89,7 +87,14 @@ const about = () => {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-
+            <div className="col-span-4 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
+              <p className="font-medium">
+                I originally studied architecture while in post secondary and
+                got some hands on experience working for organizations such as
+                Mattamy Homes as a purchaser and as a assitant project manager
+                with the city of mississauga
+              </p>
+            </div>
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light  dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
 
