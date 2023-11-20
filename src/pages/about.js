@@ -50,17 +50,14 @@ const about = () => {
             </div>
 
             <div className="col-span-4 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
-                Biography
-              </h2>
               <p className="font-medium">
-                Hello! Im Jacky 😃 Im a Fullstack Developer who loves all things
-                design 🎨 and technology 🤖. but my most recent endevor was in
-                Tech sales and client success 📈 Im currently an employee at
-                Apple store and I hope to utilize my skills in a developer role.
+                I originally studied architecture while in post secondary and
+                got some hands on experience working for organizations such as
+                Mattamy Homes as a purchaser and as a assitant project manager
+                with the city of mississauga
               </p>
             </div>
-            
+
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light  dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
 
@@ -71,6 +68,14 @@ const about = () => {
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
+            </div>
+            <div className="col-span-4 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
+              <p className="font-medium">
+                I originally studied architecture while in post secondary and
+                got some hands on experience working for organizations such as
+                Mattamy Homes as a purchaser and as a assitant project manager
+                with the city of mississauga
+              </p>
             </div>
 
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light  dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
