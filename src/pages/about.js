@@ -26,10 +26,10 @@ const about = () => {
           />
           <div className="grid w-full grid-cols-10 gap-16 sm:gap-8">
             <div className="col-span-5 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
+              {/* <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
                 Biography
-              </h2>
-              <p className="font-medium">
+              </h2> */}
+              <p className="font-medium mt-20">
                 Hello! My name is Jacky, Im a Fullstack Developer who has a passion for developing aesthetic and intuitive web appications
               </p>
             </div>
