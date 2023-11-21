@@ -30,14 +30,11 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium">
-                Hello! Im Jacky 😃 Im a Fullstack Developer who loves all things
-                design 🎨 and technology 🤖. but my most recent endevor was in
-                Tech sales and client success 📈 Im currently an employee at
-                Apple store and I hope to utilize my skills in a developer role.
+                Hello! My name is Jacky, Im a Fullstack Developer who has a passion for developing aesthetic and intuitive web appications
               </p>
             </div>
 
-            <div className="col-span-4 relative h-max rounded-2xl border-2 border-solid border-dark bg-light  dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
+            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light  dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
 
               <Image
