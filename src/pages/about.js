@@ -13,11 +13,11 @@ import TransitionEffect from "../components/TransitionEffect";
 const Biography = ({ summary, img, side }) => {
   return (
     <>
-      <div className="col-span-5 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
+      <div className="col-span-4 flex flex-col items-end justify-center ml- xl:col-span-4 md:order-2 md:col-span-8">
         <p className="font-medium mt-20">{summary}</p>
       </div>
-      <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light  dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
-        <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
+      <div className="col-span-3 relative h-max xl:col-span-4 md:order-1 md:col-span-8">
+        
         <Image
           src={img}
           alt="jacky"
