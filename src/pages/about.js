@@ -10,6 +10,26 @@ import Image from "next/image";
 import Skills from "../components/Skills";
 import TransitionEffect from "../components/TransitionEffect";
 
+const Biography = ({ summary, img, side }) => {
+  return (
+    <>
+      <div className="col-span-5 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
+        <p className="font-medium mt-20">{summary}</p>
+      </div>
+      <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light  dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
+        <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
+        <Image
+          src={img}
+          alt="jacky"
+          className="w-full h-auto rounded-2xl"
+          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+      </div>
+    </>
+  );
+};
+
 const about = () => {
   return (
     <>
@@ -25,90 +45,32 @@ const about = () => {
             className="mb-16 lg:!text-7x1 sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
           <div className="grid w-full grid-cols-10 gap-16 sm:gap-8">
-            <div className="col-span-5 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
-              {/* <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
-                Biography
-              </h2> */}
-              <p className="font-medium mt-20">
-                Hello! My name is Jacky, Im a Fullstack Developer who has a passion for developing aesthetic and intuitive web appications
-              </p>
-            </div>
-
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light  dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
-
-              <Image
-                src={About1}
-                alt="jacky"
-                className="w-full h-auto rounded-2xl"
-                priority
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>
-
-            <div className="col-span-4 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
-              <p className="font-medium">
-                I originally studied architecture while in post secondary and
-                got some hands on experience working for organizations such as
-                Mattamy Homes as a purchaser and as a assitant project manager
-                with the city of mississauga
-              </p>
-            </div>
-
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light  dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
-
-              <Image
-                src={About2}
-                alt="jacky"
-                className="w-full h-auto rounded-2xl"
-                priority
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>
-            <div className="col-span-4 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
-              <p className="font-medium">
-               Upon graduating, I had the oportunity to work for a  remote techstart where I worked in tech sales, later transitioning to a client success manager
-              </p>
-            </div>
-
+            <Biography
+              summary="Hello! My name is Jacky, Im a Fullstack Developer who has a
+                passion for developing aesthetic and intuitive web appications"
+              img={About1}
+            />
+            <Biography
+              summary="I originally studied architecture while in post secondary and
+              got some hands on experience working for organizations such as
+              Mattamy Homes as a purchaser and as a assitant project manager
+              with the city of mississauga"
+              img={About2}
+            />
+            <Biography
+              summary="Upon graduating, I had the oportunity to work for a remote
+              techstart where I worked in tech sales, later transitioning to a
+              client success manager"
+              img={About3}
+            />
+            <Biography
+              summary=" I originally studied architecture while in post secondary and
+              got some hands on experience working for organizations such as
+              Mattamy Homes as a purchaser and as a assitant project manager
+              with the city of mississauga"
+              img={About4}
+            />
             
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light  dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
-
-              <Image
-                src={About3}
-                alt="jacky"
-                className="w-full h-auto rounded-2xl"
-                priority
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>
-            <div className="col-span-4 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
-              <p className="font-medium">
-                I originally studied architecture while in post secondary and
-                got some hands on experience working for organizations such as
-                Mattamy Homes as a purchaser and as a assitant project manager
-                with the city of mississauga
-              </p>
-            </div>
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light  dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
-
-              <Image
-                src={About4}
-                alt="jacky"
-                className="w-full h-auto rounded-2xl"
-                priority
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>
-
-            <div>
-              {/* <div>
-                <span>50+</span>
-              </div> */}
-            </div>
           </div>
           <Skills />
         </Layouts>
