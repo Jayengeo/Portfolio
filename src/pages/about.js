@@ -13,18 +13,17 @@ import TransitionEffect from "../components/TransitionEffect";
 const Biography = ({ summary, img, side }) => {
   return (
     <>
-      <div className="col-span-4 flex flex-col items-end justify-center  xl:col-span-4 md:order-2 md:col-span-8">
-        <p className="font-medium mt-20">{summary}</p>
-      </div>
-      <div className="col-span-4 relative h-max xl:col-span-4 md:order-1 md:col-span-8">
-        
+      <div className="col-span-4 flex flex-col  xl:col-span-4 md:order-2 md:col-span-8">
+        <p className="font-medium ">{summary}</p>
         <Image
           src={img}
           alt="jacky"
           className="w-full h-auto rounded-2xl"
           priority
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          sizes=""
         />
+      </div>
+      <div className="col-span-4 relative h-max xl:col-span-4 md:order-1 md:col-span-8">
       </div>
     </>
   );
@@ -44,7 +43,7 @@ const about = () => {
             text="A little bit about me"
             className="mb-16 lg:!text-7x1 sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
-          <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
+          <div className="grid w-full grid-cols-8 gap-10 sm:gap-8">
             <Biography
               summary="Hello! My name is Jacky, Im a Fullstack Developer who has a
                 passion for developing aesthetic and intuitive web appications"
