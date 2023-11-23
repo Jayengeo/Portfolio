@@ -11,15 +11,31 @@ import Skills from "../components/Skills";
 import TransitionEffect from "../components/TransitionEffect";
 
 const Biography = ({ summary, img, side }) => {
+  if (side === "right") {
+    return (
+      <>
+        <Image
+          src={img}
+          alt="jacky"
+          className="col-span-5 h-50% xl:col-span-4 md:col-span-8 "
+          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+        <p className="flex items-center col-span-5 font-medium text-2xl xl:col-span-4 md:col-span-8">
+          {summary}
+        </p>
+      </>
+    );
+  }
   return (
     <>
-      <p className="font-medium text-lg xl:col-span-4 md:order-2 md:col-span-8">
+      <p className="flex items-center col-span-5 font-medium text-2xl xl:col-span-4 md:col-span-8">
         {summary}
       </p>
       <Image
         src={img}
         alt="jacky"
-        className="w-full h-auto xl:col-span-4 md:order-1 md:col-span-8 "
+        className="col-span-5 h-50% xl:col-span-4 md:col-span-8 "
         priority
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
@@ -41,33 +57,37 @@ const about = () => {
             text="A little bit about me"
             className="mb-16 lg:!text-7x1 sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
-
-          <Biography
-            summary="Hello! My name is Jacky, Im a Fullstack Developer who has a
+          <div className="grid w-full grid-cols-10 gap-1 sm:gap-8">
+            <Biography
+              summary="Hello! My name is Jacky, Im a Fullstack Developer who has a
                 passion for developing aesthetic and intuitive web appications"
-            img={About1}
-          />
-          <Biography
-            summary="I originally studied architecture while in post secondary and
+              img={About1}
+              side={"right"}
+            />
+            <Biography
+              summary="I have a background in architecture and construction management while in post secondary I
               got some hands on experience working for organizations such as
               Mattamy Homes as a purchaser and as a assitant project manager
               with the city of mississauga"
-            img={About2}
-          />
-          <Biography
-            summary="Upon graduating, I had the oportunity to work for a remote
+              img={About2}
+              side={"left"}
+            />
+            <Biography
+              summary="Upon graduating, I had the oportunity to work for a remote
               techstart where I worked in tech sales, later transitioning to a
               client success manager"
-            img={About3}
-          />
-          <Biography
-            summary=" I originally studied architecture while in post secondary and
+              img={About3}
+              side={"right"}
+            />
+            <Biography
+              summary=" I originally studied architecture while in post secondary and
               got some hands on experience working for organizations such as
               Mattamy Homes as a purchaser and as a assitant project manager
               with the city of mississauga"
-            img={About4}
-          />
-
+              img={About4}
+              side={"left"}
+            />
+          </div>
           <Skills />
         </Layouts>
       </main>
