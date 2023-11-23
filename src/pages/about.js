@@ -16,7 +16,7 @@ const Biography = ({ summary, img, side }) => {
       <div className="col-span-4 flex flex-col items-end justify-center  xl:col-span-4 md:order-2 md:col-span-8">
         <p className="font-medium mt-20">{summary}</p>
       </div>
-      <div className="col-span-3 relative h-max xl:col-span-4 md:order-1 md:col-span-8">
+      <div className="col-span-4 relative h-max xl:col-span-4 md:order-1 md:col-span-8">
         
         <Image
           src={img}
