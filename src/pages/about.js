@@ -44,7 +44,7 @@ const about = () => {
             text="A little bit about me"
             className="mb-16 lg:!text-7x1 sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
-          <div className="grid w-full grid-cols-10 gap-16 sm:gap-8">
+          <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
             <Biography
               summary="Hello! My name is Jacky, Im a Fullstack Developer who has a
                 passion for developing aesthetic and intuitive web appications"
