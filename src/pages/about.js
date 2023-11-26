@@ -11,79 +11,54 @@ import Skills from "../components/Skills";
 import TransitionEffect from "../components/TransitionEffect";
 import Carousel from "../components/Carousel.js";
 
-const Biography = ({ summary, img }) => {
-  return (
-    <>
-      <Image
-        src={img}
-        alt="jacky"
-        className="col-span-5 h-50% xl:col-span-4 md:col-span-8 "
-        priority
-      />
-      <p className="flex items-center col-span-5 font-medium text-2xl xl:col-span-4 md:col-span-8">
-        {summary}
-      </p>
-    </>
-  );
-};
-
 const slides = [
-  {"img":About1,"par":"hello"},
-  {"img":About2,"par":"hello"},
-  {"img":About3,"par":"hello"},
-  {"img":About4,"par":"hello"},
+  {
+    img: About1,
+    par: "Hello! My name is Jacky, I'm a Fullstack Developer who has a passion for developing aesthetic and intuitive web applications.",
+  },
+  // {
+  //   img: About2,
+  //   par: "Before I started my coding journey, I was in the architecture field.",
+  // },
+  // {
+  //   img: About3,
+  //   par: "Upon graduating, I had the opportunity to work for a remote tech startup...",
+  // },
+  // {
+  //   img: About4,
+  //   par: "I originally studied architecture while in post-secondary...",
+  // },
 ];
 
 const about = () => {
   return (
     <>
       <Head>
-        <title>Jacky| About Page</title>
+        <title>Jacky | About Page</title>
         <meta name="description" content="any description" />
       </Head>
       <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
-        <Layouts className="pt-16">
+        <Layouts className="pt-8">
           <AnimatedText
             text="A little bit about me"
-            className="mb-16 lg:!text-7x1 sm:!text-6xl xs:!text-4xl sm:mb-8"
+            className="mb-8 lg:!text-7x1 sm:!text-6xl xs:!text-4xl sm:mb-4"
           />
-          <div className="flex justify-center max-w-lg">
-            <Carousel>
-              {slides.map((bio,index) => (
-                <Image key={index} src={bio.img} alt={`Slide ${index}`} />
-            
-              ))}
-            </Carousel>
+          <div className="flex justify-center">
+            <div className="max-w-lg">
+              <Carousel>
+                {slides.map((bio, index) => (
+                  <div key={index}>
+                    <p className="absolute top- left-0 z-10 p-2">
+                      {bio.par}
+                    </p>
+                    <Image className="" src={bio.img} alt={`Slide ${index}`} />
+                  </div>
+                ))}
+              </Carousel>
+            </div>
           </div>
-          {/* <Biography
-            summary="Hello! My name is Jacky, Im a Fullstack Developer who has a
-                passion for developing aesthetic and intuitive web appications"
-            img={About1}
-            side={"right"}
-          />
-          <Biography
-            summary="I have a background in architecture and construction management while in post secondary I
-              got some hands on experience working for organizations such as
-              Mattamy Homes as a purchaser and as a assitant project manager
-              with the city of mississauga"
-            img={About2}
-          />
-          <Biography
-            summary="Upon graduating, I had the oportunity to work for a remote
-              techstart where I worked in tech sales, later transitioning to a
-              client success manager"
-            img={About3}
-          />
-          <Biography
-            summary=" I originally studied architecture while in post secondary and
-              got some hands on experience working for organizations such as
-              Mattamy Homes as a purchaser and as a assitant project manager
-              with the city of mississauga"
-            img={About4}
-          />
-
-          <Skills /> */}
+          <Skills />
         </Layouts>
       </main>
     </>
