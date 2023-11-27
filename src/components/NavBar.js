@@ -81,13 +81,13 @@ const NavBar = () => {
       </button>
 
       <div className="w-full flex justify-between items-center lg:hidden">
+
         <nav>
           <CustomLink href="/" title="Home" className="mr-4" />
           <CustomLink href="/about" title="About" className="mx-4" />
           <CustomLink href="/projects" title="Projects" className="ml-4" />
           <CustomLink href="/contact" title="Contact" className="ml-8" />
         </nav>
-
         <nav className="flex items-center justify-center flex-wrap ">
           <motion.a
             href="https://github.com/Jayengeo"

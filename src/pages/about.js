@@ -44,15 +44,15 @@ const about = () => {
             text="A little bit about me"
             className="mb-8 lg:!text-7x1 sm:!text-6xl xs:!text-4xl sm:mb-4"
           />
-          <div className="flex justify-center">
-            <div className="max-w-lg">
+          <div className="flex justify-center ">
+            <div className="max-w-lg  rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light">
               <Carousel>
                 {slides.map((bio, index) => (
                   <div key={index}>
-                    <p className="absolute top- left-0 z-10 p-2">
+                    <Image className="" src={bio.img} alt={`Slide ${index}`} />
+                    <p className=" text-base font-medium md:text-sm sm:text-xs absolute top-1 left-0 z-10 p-">
                       {bio.par}
                     </p>
-                    <Image className="" src={bio.img} alt={`Slide ${index}`} />
                   </div>
                 ))}
               </Carousel>
