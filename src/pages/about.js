@@ -45,7 +45,8 @@ const about = () => {
             className="mb-8 lg:!text-7x1 sm:!text-6xl xs:!text-4xl sm:mb-4"
           />
           <div className="flex justify-center ">
-            <div className="max-w-lg  rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light">
+            <div className="max-w-lg  relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light">
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
               <Carousel>
                 {slides.map((bio, index) => (
                   <div key={index}>
