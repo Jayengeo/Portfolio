@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "react-feather";
+import Image from "next/image";
 
 export default function Carousel({
-  children: slides,
+  slides,
   autoSlide = false,
   autoSlideInterval = 3000,
 }) {
@@ -24,7 +25,20 @@ export default function Carousel({
         className="flex transition-transform ease-out duration-500"
         style={{ transform: `translateX(-${curr * 100}%)` }}
       >
-        {slides}
+        {slides.map((slide, index) => (
+          <div key={index} className={index === curr ? "block" : "hidden"}>
+            {slide.img && (
+              <Image
+                src={slide.img}
+                alt={`Slide ${index}`}
+                className="w-full h-auto"
+              />
+            )}
+            <p className="text-base font-medium md:text-sm sm:text-xs absolute top-1 left-0 z-10 p-">
+              {slide.par}
+            </p>
+          </div>
+        ))}
       </div>
       <div className="absolute inset-0 flex items-center justify-between p-4">
         <button
