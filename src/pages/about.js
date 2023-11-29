@@ -47,8 +47,15 @@ const about = () => {
           <div className="flex justify-center ">
             <div className="max-w-lg relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light">
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
-              <Carousel slides>
-              
+              <Carousel>
+                {slides.map((bio, index) => (
+                  <div key={index}>
+                    <Image className="" src={bio.img} alt={`Slide ${index}`} />
+                    <p className=" text-base font-medium md:text-sm sm:text-xs absolute top-1 left-0 z-10 p-">
+                      {bio.par}
+                    </p>
+                  </div>
+                ))}
               </Carousel>
             </div>
           </div>
