@@ -24,10 +24,6 @@ const slides = [
     img: About3,
     par: "Upon graduating, I had the opportunity to work for a remote tech startup...",
   },
-  {
-    img: About4,
-    par: "I originally studied architecture while in post-secondary...",
-  },
 ];
 
 const about = () => {
