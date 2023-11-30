@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { FaCode } from "react-icons/fa";
 
 const Skill = ({ name, x, y }) => {
   return (
@@ -23,10 +24,10 @@ const Skills = () => {
       </h2>
       <div className="w-full h-screen flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark lg:h-[80vh] sm:h-[60vh] xs:h-[50vh] lg:bg-circularLightLg lg:dark:bg-circularDarkLg md:bg-circularLightLg md:dark:bg-circularDarkLg sm:bg-circularLightLg sm:dark:bg-circularDarkLg">
         <motion.div
-          className="flex items-center justify-center rounded-full font-semibold bg-dark text-light p-8 shadow-dark cursor-pointer dark:text-dark dark:bg-light lg:p-6 md:p-4 xs:text-xs xs:p-2"
+          className="flex items-center justify-center rounded-full font-semibold bg-dark text-light p-4 shadow-dark cursor-pointer dark:text-dark dark:bg-light lg:p-6 md:p-4 xs:text-xs xs:p-2"
           whileHover={{ scale: 1.05 }}
         >
-          Web
+          <FaCode  size={30}/>
         </motion.div>
         <Skill name="CSS" x="-5vw" y="-10vw" />
         <Skill name="HTML" x="-20vw" y="2vw" />
