@@ -27,7 +27,7 @@ const Skills = () => {
           className="flex items-center justify-center rounded-full font-semibold bg-dark text-light p-4 shadow-dark cursor-pointer dark:text-dark dark:bg-light lg:p-6 md:p-4 xs:text-xs xs:p-2"
           whileHover={{ scale: 1.05 }}
         >
-          <FaCode  size={30}/>
+          <FaCode  size={25}/>
         </motion.div>
         <Skill name="CSS" x="-5vw" y="-10vw" />
         <Skill name="HTML" x="-20vw" y="2vw" />
