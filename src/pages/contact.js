@@ -1,4 +1,3 @@
-
 import Head from "next/head";
 import Layouts from "../components/Layouts";
 import Image from "next/image";
@@ -39,17 +38,35 @@ const contact = () => {
       </Head>
       <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light 2xl:">
-        <Layouts className="pt-0 md:pt-16 sm:pt-8"></Layouts>
+        <Layouts className="pt-0 md:pt-16 sm:pt-8">
+          <form ref={form} onSubmit={sendEmail} className="w-400">
+            <label className="mt-4">Name</label>
+            <input
+              type="text"
+              name="user_name"
+              className="w-full h-35 p-7 outline-none rounded-md border border-gray-300 focus:border-teal-500"
+            />
 
-        <form ref={form} onSubmit={sendEmail}>
-          <label>Name</label>
-          <input type="text" name="user_name" />
-          <label>Email</label>
-          <input type="email" name="user_email" />
-          <label>Message</label>
-          <textarea name="message" />
-          <input type="submit" value="Send" />
-        </form>
+            <label className="mt-4">Email</label>
+            <input
+              type="email"
+              name="user_email"
+              className="w-full h-35 p-7 outline-none rounded-md border border-gray-300 focus:border-teal-500"
+            />
+
+            <label className="mt-4">Message</label>
+            <textarea
+              name="message"
+              className="w-full max-h-100 min-h-100 p-7 outline-none rounded-md border border-gray-300 focus:border-teal-500"
+            />
+
+            <input
+              type="submit"
+              value="Send"
+              className="mt-8 cursor-pointer bg-orange-500 text-white border-none"
+            />
+          </form>
+        </Layouts>
       </main>
     </>
   );
