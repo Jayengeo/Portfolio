@@ -60,14 +60,14 @@ const Contact = () => {
               <input
                 type="text"
                 name="user_name"
-                className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light mb-4"
+                className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light shadow-2xl p-6 dark:bg-dark dark:border-light mb-4"
               />
 
               <label className="mt-4">Email</label>
               <input
                 type="email"
                 name="user_email"
-                className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light mb-4"
+                className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light shadow-2xl p-6 dark:bg-dark dark:border-light mb-4"
               />
 
               <label className="mt-4">Message</label>
