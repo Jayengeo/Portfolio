@@ -38,26 +38,25 @@ const Contact = () => {
       <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light 2xl:">
         <Layouts className="pt-0 md:pt-16 sm:pt-8">
-          <form ref={form} onSubmit={sendEmail} className="w-400 ">
-            
+          <form onSubmit={sendEmail} className="w-400 ">
             <label className="mt-4">Name</label>
             <input
               type="text"
               name="user_name"
-              className=" w-full relative rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light"
+              className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light mb-4"
             />
-          
+            
             <label className="mt-4">Email</label>
             <input
               type="email"
               name="user_email"
-              className="w-full relative rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light"
+              className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light mb-4"
             />
 
             <label className="mt-4">Message</label>
             <textarea
               name="message"
-              className="w-full relative rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light"
+              className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light mb-4"
             />
 
             <input
