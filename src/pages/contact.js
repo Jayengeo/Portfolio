@@ -3,6 +3,9 @@ import Layouts from "../components/Layouts";
 import TransitionEffect from "../components/TransitionEffect";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Image from "next/image";
+import profilePic from "../../public/images/profile/Programming-pana.png";
+import AnimatedText from "../components/AnimatedText";
 
 const Contact = () => {
   const form = useRef();
@@ -38,6 +41,12 @@ const Contact = () => {
       <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light 2xl:">
         <Layouts className="pt-0 md:pt-16 sm:pt-8">
+         
+          <AnimatedText
+            text="Let's get in touch!"
+            className=" mt-6 mb-8 lg:!text-7x1 sm:!text-6xl xs:!text-4xl sm:mb-4"
+          />
+
           <form onSubmit={sendEmail} className="w-400 ">
             <label className="mt-4">Name</label>
             <input
@@ -45,7 +54,7 @@ const Contact = () => {
               name="user_name"
               className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light mb-4"
             />
-            
+
             <label className="mt-4">Email</label>
             <input
               type="email"
@@ -62,7 +71,7 @@ const Contact = () => {
             <input
               type="submit"
               value="Send"
-              className="mt-8 cursor-pointer bg-orange-500 text-white border-none"
+              className="mt-8 cursor-pointer  "
             />
           </form>
         </Layouts>
