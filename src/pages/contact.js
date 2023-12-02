@@ -43,20 +43,20 @@ const Contact = () => {
         <Layouts className="pt-0 md:pt-16 sm:pt-8">
           <AnimatedText
             text="Let's get in touch!"
-            className=" mt-6 mb-8 lg:!text-7x1 sm:!text-6xl xs:!text-4xl sm:mb-4"
+            className="mt-6 mb-8 lg:!text-7x1 sm:!text-6xl xs:!text-4xl sm:mb-4"
           />
           <div className="flex items-center justify-between w-full lg:flex-col">
-            <div className="w-1/2 md:w-full">
+            <div className="w-full md:w-1/2">
               <Image
                 src={contact}
                 alt="jacky"
-                className="w-full h-auto lg:hidden md:inline-block md:w-full"
+                className="w-full h-auto"
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
             </div>
             <form onSubmit={sendEmail} className="w-400 ">
-              <label className="mt-4">Name</label>
+              <label className="mt-4 ">Name</label>
               <input
                 type="text"
                 name="user_name"
@@ -75,11 +75,13 @@ const Contact = () => {
                 name="message"
                 className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light mb-4"
               />
-              <input
-                type="submit"
-                value="Send"
-                className="mt-8 cursor-pointer  "
-              />
+              <div className="flex flex-col items-center">
+                <input
+                  type="submit"
+                  value="Send"
+                  className=" mt-2 p-4 cursor-pointer rounded-br-2x1 rounded-3xl border border-solid border-dark dark:border-light "
+                />
+              </div>
             </form>
           </div>
         </Layouts>
