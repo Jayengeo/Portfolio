@@ -4,7 +4,7 @@ import TransitionEffect from "../components/TransitionEffect";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
-import profilePic from "../../public/images/profile/Programming-pana.png";
+import contact from "../../public/images/profile/Completed steps-pana.png";
 import AnimatedText from "../components/AnimatedText";
 
 const Contact = () => {
@@ -41,39 +41,47 @@ const Contact = () => {
       <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light 2xl:">
         <Layouts className="pt-0 md:pt-16 sm:pt-8">
-         
           <AnimatedText
             text="Let's get in touch!"
             className=" mt-6 mb-8 lg:!text-7x1 sm:!text-6xl xs:!text-4xl sm:mb-4"
           />
+          <div className="flex items-center justify-between w-full lg:flex-col">
+            <div className="w-1/2 md:w-full">
+              <Image
+                src={contact}
+                alt="jacky"
+                className="w-full h-auto lg:hidden md:inline-block md:w-full"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+              />
+            </div>
+            <form onSubmit={sendEmail} className="w-400 ">
+              <label className="mt-4">Name</label>
+              <input
+                type="text"
+                name="user_name"
+                className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light mb-4"
+              />
 
-          <form onSubmit={sendEmail} className="w-400 ">
-            <label className="mt-4">Name</label>
-            <input
-              type="text"
-              name="user_name"
-              className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light mb-4"
-            />
+              <label className="mt-4">Email</label>
+              <input
+                type="email"
+                name="user_email"
+                className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light mb-4"
+              />
 
-            <label className="mt-4">Email</label>
-            <input
-              type="email"
-              name="user_email"
-              className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light mb-4"
-            />
-
-            <label className="mt-4">Message</label>
-            <textarea
-              name="message"
-              className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light mb-4"
-            />
-
-            <input
-              type="submit"
-              value="Send"
-              className="mt-8 cursor-pointer  "
-            />
-          </form>
+              <label className="mt-4">Message</label>
+              <textarea
+                name="message"
+                className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light mb-4"
+              />
+              <input
+                type="submit"
+                value="Send"
+                className="mt-8 cursor-pointer  "
+              />
+            </form>
+          </div>
         </Layouts>
       </main>
     </>
