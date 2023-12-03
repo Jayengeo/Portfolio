@@ -55,26 +55,28 @@ const Contact = () => {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
             </div>
-            <form onSubmit={sendEmail} className="w-400 rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light p-8 ">
+            <form
+              onSubmit={sendEmail}
+              className="w-400 rounded-br-2x1 rounded-3xl border border-solid border-dark  dark:border-light  p-8 "
+            >
               <label className="mt-4 ">Name</label>
               <input
                 type="text"
                 name="user_name"
-                className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light shadow-2xl p-6 dark:bg-dark dark:border-light mb-4"
+                className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light  p-6 dark:bg-dark dark:border-light mb-4"
               />
-              
 
               <label className="mt-4">Email</label>
               <input
                 type="email"
                 name="user_email"
-                className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light shadow-2xl p-6 dark:bg-dark dark:border-light mb-4"
+                className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light p-6 dark:bg-dark dark:border-light mb-4"
               />
 
               <label className="mt-4">Message</label>
               <textarea
                 name="message"
-                className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light mb-4"
+                className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light p-12 dark:bg-dark dark:border-light mb-4"
               />
               <div className="flex flex-col items-center">
                 <input
