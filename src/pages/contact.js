@@ -6,6 +6,7 @@ import emailjs from "@emailjs/browser";
 import Image from "next/image";
 import contact from "../../public/images/profile/Completed steps-pana.png";
 import AnimatedText from "../components/AnimatedText";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const form = useRef();
@@ -80,10 +81,11 @@ const Contact = () => {
                 className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light p-12 dark:bg-dark dark:border-light mb-4"
               />
               <div className="flex flex-col items-center">
-                <input
+                <motion.input
                   type="submit"
                   value="Send"
                   className=" mt-2 p-4 cursor-pointer rounded-br-2x1 rounded-3xl border border-solid border-dark dark:border-light "
+                  whileHover={{ scale: 1.05 }}
                 />
               </div>
             </form>
