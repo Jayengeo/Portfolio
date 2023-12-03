@@ -46,7 +46,7 @@ const Contact = () => {
             className="mt-6 mb-8 lg:!text-7x1 sm:!text-6xl xs:!text-4xl sm:mb-4"
           />
           <div className="flex items-center justify-between w-full lg:flex-col">
-            <div className="w-full md:w-1/2">
+            <div className="w-4/5 md:w-1/2">
               <Image
                 src={contact}
                 alt="jacky"
@@ -55,13 +55,14 @@ const Contact = () => {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
             </div>
-            <form onSubmit={sendEmail} className="w-400 ">
+            <form onSubmit={sendEmail} className="w-400 rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light p-8 ">
               <label className="mt-4 ">Name</label>
               <input
                 type="text"
                 name="user_name"
                 className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light shadow-2xl p-6 dark:bg-dark dark:border-light mb-4"
               />
+              
 
               <label className="mt-4">Email</label>
               <input
