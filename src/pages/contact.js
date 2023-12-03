@@ -51,14 +51,14 @@ const Contact = () => {
               <Image
                 src={contact}
                 alt="jacky"
-                className="w-full h-auto"
+                className="w-full h-auto px-10"
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
             </div>
             <form
               onSubmit={sendEmail}
-              className="relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light"
+              className="relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light px-10"
             >
               <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
               <label className="mt-4 ">Name</label>
