@@ -5,15 +5,17 @@ import { useRouter } from "next/router";
 import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from "./Icons";
 import { motion } from "framer-motion";
 import useThemeSwitcher from "../components/hooks/useThemeSwitcher";
+import { FaHome } from "react-icons/fa";
 
-const CustomLink = ({ href, title, className = "" }) => {
+const CustomLink = ({ href, title, className = "", icon }) => {
   const router = useRouter();
 
   return (
     <Link href={href} className={`${className} relative group`}>
+      {icon}
       {title}
       <span
-        className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 
+        className={`flex h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 
         ${router.asPath === href ? "w-full" : "w-0"}
         dark:bg-light`}
       >
@@ -81,8 +83,6 @@ const NavBar = () => {
       </button>
 
       <div className="w-full flex justify-between items-center lg:hidden">
-
-        
         <nav className="flex items-center justify-center flex-wrap ">
           <motion.a
             href="https://github.com/Jayengeo"
@@ -116,7 +116,8 @@ const NavBar = () => {
           </button>
         </nav>
         <nav>
-          <CustomLink href="/" title="Home" className="mr-4" />
+          
+          <CustomLink href="/" title="Home" className="flex mr-4" icon={<FaHome />} />
           <CustomLink href="/about" title="About" className="mx-4" />
           <CustomLink href="/projects" title="Projects" className="ml-4" />
           <CustomLink href="/contact" title="Contact" className="ml-8" />
