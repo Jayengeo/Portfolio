@@ -7,6 +7,8 @@ import { motion } from "framer-motion";
 import useThemeSwitcher from "../components/hooks/useThemeSwitcher";
 import { FaHome } from "react-icons/fa";
 import { FaQuestionCircle } from "react-icons/fa";
+import { FaFileCode } from "react-icons/fa";
+
 
 const CustomLink = ({ href, title, className = "", icon }) => {
   const router = useRouter();
@@ -120,7 +122,7 @@ const NavBar = () => {
           
           <CustomLink href="/" title="Home" className="mr-4" icon={<FaHome />} />
           <CustomLink href="/about" title="About" className="mx-4" icon={<FaQuestionCircle />} />
-          <CustomLink href="/projects" title="Projects" className="ml-4" />
+          <CustomLink href="/projects" title="Projects" className="ml-4" icon={<FaFileCode />} />
           <CustomLink href="/contact" title="Contact" className="ml-8" />
         </nav>
       </div>
