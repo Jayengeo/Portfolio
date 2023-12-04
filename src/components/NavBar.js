@@ -8,6 +8,7 @@ import useThemeSwitcher from "../components/hooks/useThemeSwitcher";
 import { FaHome } from "react-icons/fa";
 import { FaQuestionCircle } from "react-icons/fa";
 import { FaFileCode } from "react-icons/fa";
+import { MdOutlineMail } from "react-icons/md";
 
 
 const CustomLink = ({ href, title, className = "", icon }) => {
@@ -15,6 +16,7 @@ const CustomLink = ({ href, title, className = "", icon }) => {
 
   return (
     <Link href={href} className={`${className} relative group`}>
+     
       {icon}
       {title}
       <span
@@ -118,12 +120,12 @@ const NavBar = () => {
             )}
           </button>
         </nav>
-        <nav>
+        <nav className="flex justify-between">
           
           <CustomLink href="/" title="Home" className="mr-4" icon={<FaHome />} />
           <CustomLink href="/about" title="About" className="mx-4" icon={<FaQuestionCircle />} />
           <CustomLink href="/projects" title="Projects" className="ml-4" icon={<FaFileCode />} />
-          <CustomLink href="/contact" title="Contact" className="ml-8" />
+          <CustomLink href="/contact" title="Contact" className="ml-8" icon={<MdOutlineMail />} />
         </nav>
       </div>
 
