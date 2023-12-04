@@ -10,15 +10,15 @@ import { FaQuestionCircle } from "react-icons/fa";
 import { FaFileCode } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 
-
 const CustomLink = ({ href, title, className = "", icon }) => {
   const router = useRouter();
 
   return (
     <Link href={href} className={`${className} relative group`}>
-     
-      {icon}
-      {title}
+      <div className="flex justify-between items-center ">
+        <div className="mr-1">{icon}</div>
+        <div>{title}</div>
+      </div>
       <span
         className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 
         ${router.asPath === href ? "w-full" : "w-0"}
@@ -121,11 +121,30 @@ const NavBar = () => {
           </button>
         </nav>
         <nav className="flex justify-between">
-          
-          <CustomLink href="/" title="Home" className="mr-4" icon={<FaHome />} />
-          <CustomLink href="/about" title="About" className="mx-4" icon={<FaQuestionCircle />} />
-          <CustomLink href="/projects" title="Projects" className="ml-4" icon={<FaFileCode />} />
-          <CustomLink href="/contact" title="Contact" className="ml-8" icon={<MdOutlineMail />} />
+          <CustomLink
+            href="/"
+            title="Home"
+            className="mr-4"
+            icon={<FaHome />}
+          />
+          <CustomLink
+            href="/about"
+            title="About"
+            className="mx-4"
+            icon={<FaQuestionCircle />}
+          />
+          <CustomLink
+            href="/projects"
+            title="Projects"
+            className="ml-4"
+            icon={<FaFileCode />}
+          />
+          <CustomLink
+            href="/contact"
+            title="Contact"
+            className="ml-8"
+            icon={<MdOutlineMail />}
+          />
         </nav>
       </div>
 
