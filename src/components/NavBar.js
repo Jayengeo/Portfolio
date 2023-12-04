@@ -5,10 +5,10 @@ import { useRouter } from "next/router";
 import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from "./Icons";
 import { motion } from "framer-motion";
 import useThemeSwitcher from "../components/hooks/useThemeSwitcher";
-import { FaHome } from "react-icons/fa";
-import { FaQuestionCircle } from "react-icons/fa";
-import { FaFileCode } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
+import { GoHome } from "react-icons/go";
+import { BsQuestionSquare } from "react-icons/bs";
+import { FaCode } from "react-icons/fa6";
 
 const CustomLink = ({ href, title, className = "", icon }) => {
   const router = useRouter();
@@ -125,19 +125,19 @@ const NavBar = () => {
             href="/"
             title="Home"
             className="mr-4"
-            icon={<FaHome />}
+            icon={<GoHome />}
           />
           <CustomLink
             href="/about"
             title="About"
             className="mx-4"
-            icon={<FaQuestionCircle />}
+            icon={<BsQuestionSquare />}
           />
           <CustomLink
             href="/projects"
             title="Projects"
             className="ml-4"
-            icon={<FaFileCode />}
+            icon={<FaCode />}
           />
           <CustomLink
             href="/contact"
