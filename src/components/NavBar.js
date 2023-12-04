@@ -6,6 +6,7 @@ import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from "./Icons";
 import { motion } from "framer-motion";
 import useThemeSwitcher from "../components/hooks/useThemeSwitcher";
 import { FaHome } from "react-icons/fa";
+import { FaQuestionCircle } from "react-icons/fa";
 
 const CustomLink = ({ href, title, className = "", icon }) => {
   const router = useRouter();
@@ -15,7 +16,7 @@ const CustomLink = ({ href, title, className = "", icon }) => {
       {icon}
       {title}
       <span
-        className={`flex h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 
+        className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 
         ${router.asPath === href ? "w-full" : "w-0"}
         dark:bg-light`}
       >
@@ -117,8 +118,8 @@ const NavBar = () => {
         </nav>
         <nav>
           
-          <CustomLink href="/" title="Home" className="flex mr-4" icon={<FaHome />} />
-          <CustomLink href="/about" title="About" className="mx-4" />
+          <CustomLink href="/" title="Home" className="mr-4" icon={<FaHome />} />
+          <CustomLink href="/about" title="About" className="mx-4" icon={<FaQuestionCircle />} />
           <CustomLink href="/projects" title="Projects" className="ml-4" />
           <CustomLink href="/contact" title="Contact" className="ml-8" />
         </nav>
