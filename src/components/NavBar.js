@@ -6,7 +6,7 @@ import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from "./Icons";
 import { motion } from "framer-motion";
 import useThemeSwitcher from "../components/hooks/useThemeSwitcher";
 import { MdOutlineMail } from "react-icons/md";
-import { GoHome } from "react-icons/go";
+import { GrHomeRounded } from "react-icons/gr";
 import { BsQuestionSquare } from "react-icons/bs";
 import { FaCode } from "react-icons/fa6";
 
@@ -125,7 +125,7 @@ const NavBar = () => {
             href="/"
             title="Home"
             className="mr-4"
-            icon={<GoHome />}
+            icon={<GrHomeRounded />}
           />
           <CustomLink
             href="/about"
