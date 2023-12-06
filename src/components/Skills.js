@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { FaCode } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
+import { FaFigma } from "react-icons/fa";
 
 const Skill = ({ name, icon, x, y }) => {
   return (
@@ -39,7 +40,7 @@ const Skills = () => {
         <Skill name="Javascript" x="20vw" y="6vw" />
         <Skill name="ReactJS" x="0vw" y="12vw" />
         <Skill name="NextJS" x="-20vw" y="-15vw" />
-        <Skill name="Figma" x="15vw" y="-12vw" />
+        <Skill name="Figma" icon={<FaFigma />}  x="15vw" y="-12vw" />
         <Skill name="Ruby" x="15vw" y="15vw" />
         <Skill name="Tailwind CSS" x="-25vw" y="15vw" />
         <Skill name="NodeJS" x="0vw" y="-20vw" />
