@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaCode } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
+import { FaPython } from "react-icons/fa";
 
 const Skill = ({ name, icon, x, y }) => {
   return (
@@ -44,7 +45,7 @@ const Skills = () => {
         <Skill name="NodeJS" x="0vw" y="-20vw" />
         <Skill name="Typescript" x="35vw" y="15vw" />
         <Skill name="Express" x="-30vw" y="-10vw" />
-        <Skill name="Python" x="-0vw" y="-5vw" />
+        <Skill name="Python" icon={<FaPython />} x="-0vw" y="-5vw" />
       </div>
     </>
   );
