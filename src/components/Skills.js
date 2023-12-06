@@ -36,16 +36,16 @@ const Skills = () => {
           <FaCode size={25} />
         </motion.div>
         <Skill name="CSS" icon={<FaCss3 />} x="-5vw" y="-10vw" />
-        <Skill name="HTML" x="-20vw" y="2vw" />
-        <Skill name="Javascript" x="20vw" y="6vw" />
-        <Skill name="ReactJS" x="0vw" y="12vw" />
-        <Skill name="NextJS" x="-20vw" y="-15vw" />
-        <Skill name="Figma" icon={<FaFigma />}  x="15vw" y="-12vw" />
-        <Skill name="Ruby" x="15vw" y="15vw" />
-        <Skill name="Tailwind CSS" x="-25vw" y="15vw" />
-        <Skill name="NodeJS" x="0vw" y="-20vw" />
-        <Skill name="Typescript" x="35vw" y="15vw" />
-        <Skill name="Express" x="-30vw" y="-10vw" />
+        <Skill name="HTML" icon={""} x="-20vw" y="2vw" />
+        <Skill name="Javascript" icon={""} x="20vw" y="6vw" />
+        <Skill name="ReactJS" icon={""} x="0vw" y="12vw" />
+        <Skill name="NextJS" icon={""} x="-20vw" y="-15vw" />
+        <Skill name="Figma" icon={<FaFigma />} x="15vw" y="-12vw" />
+        <Skill name="Ruby" icon={""} x="15vw" y="15vw" />
+        <Skill name="Tailwind CSS" icon={""} x="-25vw" y="15vw" />
+        <Skill name="NodeJS" icon={""} x="0vw" y="-20vw" />
+        <Skill name="Typescript" icon={""} x="35vw" y="15vw" />
+        <Skill name="Express" icon={""} x="-30vw" y="-10vw" />
         <Skill name="Python" icon={<FaPython />} x="-0vw" y="-5vw" />
       </div>
     </>
