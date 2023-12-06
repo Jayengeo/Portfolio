@@ -5,6 +5,7 @@ import { FaCss3 } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
 
 const Skill = ({ name, icon, x, y }) => {
   return (
@@ -40,7 +41,7 @@ const Skills = () => {
         <Skill name="HTML" icon={""} x="-20vw" y="2vw" />
         <Skill name="Javascript" icon={""} x="20vw" y="6vw" />
         <Skill name="ReactJS" icon={""} x="0vw" y="12vw" />
-        <Skill name="NextJS" icon={""} x="-20vw" y="-15vw" />
+        <Skill name="NextJS" icon={<TbBrandNextjs />} x="-20vw" y="-15vw" />
         <Skill name="Figma" icon={<FaFigma />} x="15vw" y="-12vw" />
         <Skill name="Ruby" icon={""} x="15vw" y="15vw" />
         <Skill name="Tailwind CSS" icon={""} x="-25vw" y="15vw" />
