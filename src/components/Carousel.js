@@ -24,8 +24,7 @@ export default function Carousel({
         className="flex transition-transform ease-out duration-500"
         style={{ transform: `translateX(-${curr * 100}%)` }}
       >
-        {slides[0]}
-      
+        {slides}
       </div>
       <div className="absolute inset-0 flex items-center justify-between p-4">
         <button

@@ -45,12 +45,12 @@ const about = () => {
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
               <Carousel>
                 {slides.map((bio, index) => (
-                  <div key={index}>
-                    <Image className="" src={bio.img} alt={`Slide ${index}`} />
-                    <p className=" text-base font-medium md:text-sm sm:text-xs absolute top-1 left-0 z-10 p-">
-                      {bio.par}
-                    </p>
-                  </div>
+                  <Image
+                    key={index}
+                    className=""
+                    src={bio.img}
+                    alt={`Slide ${index}`}
+                  />
                 ))}
               </Carousel>
             </div>
