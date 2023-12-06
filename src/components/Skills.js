@@ -4,6 +4,7 @@ import { FaCode } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa";
 
 const Skill = ({ name, icon, x, y }) => {
   return (
@@ -43,7 +44,7 @@ const Skills = () => {
         <Skill name="Figma" icon={<FaFigma />} x="15vw" y="-12vw" />
         <Skill name="Ruby" icon={""} x="15vw" y="15vw" />
         <Skill name="Tailwind CSS" icon={""} x="-25vw" y="15vw" />
-        <Skill name="NodeJS" icon={""} x="0vw" y="-20vw" />
+        <Skill name="NodeJS" icon={<FaNodeJs />} x="0vw" y="-20vw" />
         <Skill name="Typescript" icon={""} x="35vw" y="15vw" />
         <Skill name="Express" icon={""} x="-30vw" y="-10vw" />
         <Skill name="Python" icon={<FaPython />} x="-0vw" y="-5vw" />
