@@ -7,6 +7,7 @@ import { FaFigma } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io5";
+import { FaHtml5 } from "react-icons/fa";
 
 const Skill = ({ name, icon, x, y }) => {
   return (
@@ -39,7 +40,7 @@ const Skills = () => {
           <FaCode size={25} />
         </motion.div>
         <Skill name="CSS" icon={<FaCss3 />} x="-5vw" y="-10vw" />
-        <Skill name="HTML" icon={""} x="-20vw" y="2vw" />
+        <Skill name="HTML" icon={<FaHtml5 />} x="-20vw" y="2vw" />
         <Skill name="Javascript" icon={<IoLogoJavascript />} x="20vw" y="6vw" />
         <Skill name="ReactJS" icon={""} x="0vw" y="12vw" />
         <Skill name="NextJS" icon={<TbBrandNextjs />} x="-20vw" y="-15vw" />
