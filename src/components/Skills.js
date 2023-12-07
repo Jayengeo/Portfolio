@@ -12,6 +12,7 @@ import { RiReactjsFill } from "react-icons/ri";
 import { DiRuby } from "react-icons/di";
 import { SiTypescript } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
 
 const Skill = ({ name, icon, x, y }) => {
   return (
@@ -53,7 +54,7 @@ const Skills = () => {
         <Skill name="Tailwind CSS" icon={<SiTailwindcss />} x="-25vw" y="15vw" />
         <Skill name="NodeJS" icon={<FaNodeJs />} x="0vw" y="-20vw" />
         <Skill name="Typescript" icon={<SiTypescript />} x="35vw" y="15vw" />
-        <Skill name="Express" icon={""} x="-30vw" y="-10vw" />
+        <Skill name="Express" icon={<SiExpress />} x="-30vw" y="-10vw" />
         <Skill name="Python" icon={<FaPython />} x="-0vw" y="-5vw" />
       </div>
     </>
