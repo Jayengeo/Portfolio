@@ -10,6 +10,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { FaHtml5 } from "react-icons/fa";
 import { RiReactjsFill } from "react-icons/ri";
 import { DiRuby } from "react-icons/di";
+import { SiTypescript } from "react-icons/si";
 
 const Skill = ({ name, icon, x, y }) => {
   return (
@@ -50,7 +51,7 @@ const Skills = () => {
         <Skill name="Ruby" icon={<DiRuby />} x="15vw" y="15vw" />
         <Skill name="Tailwind CSS" icon={""} x="-25vw" y="15vw" />
         <Skill name="NodeJS" icon={<FaNodeJs />} x="0vw" y="-20vw" />
-        <Skill name="Typescript" icon={""} x="35vw" y="15vw" />
+        <Skill name="Typescript" icon={<SiTypescript />} x="35vw" y="15vw" />
         <Skill name="Express" icon={""} x="-30vw" y="-10vw" />
         <Skill name="Python" icon={<FaPython />} x="-0vw" y="-5vw" />
       </div>
@@ -59,4 +60,3 @@ const Skills = () => {
 };
 
 export default Skills;
-git a
