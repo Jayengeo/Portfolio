@@ -9,6 +9,7 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaHtml5 } from "react-icons/fa";
 import { RiReactjsFill } from "react-icons/ri";
+import { DiRuby } from "react-icons/di";
 
 const Skill = ({ name, icon, x, y }) => {
   return (
@@ -46,7 +47,7 @@ const Skills = () => {
         <Skill name="ReactJS" icon={<RiReactjsFill />} x="0vw" y="12vw" />
         <Skill name="NextJS" icon={<TbBrandNextjs />} x="-20vw" y="-15vw" />
         <Skill name="Figma" icon={<FaFigma />} x="15vw" y="-12vw" />
-        <Skill name="Ruby" icon={""} x="15vw" y="15vw" />
+        <Skill name="Ruby" icon={<DiRuby />} x="15vw" y="15vw" />
         <Skill name="Tailwind CSS" icon={""} x="-25vw" y="15vw" />
         <Skill name="NodeJS" icon={<FaNodeJs />} x="0vw" y="-20vw" />
         <Skill name="Typescript" icon={""} x="35vw" y="15vw" />
@@ -58,3 +59,4 @@ const Skills = () => {
 };
 
 export default Skills;
+git a
