@@ -134,7 +134,7 @@ const projects = () => {
             <div className="col-span-6 sm:col-span-12 ">
               <Project
                 img={project1}
-                title="Doggo Dash"
+                title="Interview Scheduler"
                 summary="Doggo Dash is a multi-page application which allows users to register as a dog owner looking for dog sitters, or as a dog sitter looking to provide their services."
                 link="/"
                 type="Featured Project"
@@ -144,7 +144,7 @@ const projects = () => {
             <div className="col-span-6 sm:col-span-12 ">
               <Project
                 img={project1}
-                title="Doggo Dash"
+                title=""
                 summary="Doggo Dash is a multi-page application which allows users to register as a dog owner looking for dog sitters, or as a dog sitter looking to provide their services."
                 link="/"
                 type="Featured Project"
