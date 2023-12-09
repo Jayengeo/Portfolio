@@ -135,7 +135,7 @@ const projects = () => {
               <Project
                 img={project1}
                 title="Interview Scheduler"
-                summary="Doggo Dash is a multi-page application which allows users to register as a dog owner looking for dog sitters, or as a dog sitter looking to provide their services."
+                summary="Is an react-based application that allows users to schedule appointments with an interviewer."
                 link="/"
                 type="Featured Project"
                 github="https://github.com/Jayengeo/Doggo-Dash"
