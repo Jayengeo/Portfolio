@@ -49,7 +49,7 @@ const Skills = () => {
         <Skill name="Javascript" icon={<IoLogoJavascript />} x="-8vw" y="0vw"  />
         <Skill name="ReactJS" icon={<RiReactjsFill />} x="-18vw" y="0vw" />
         <Skill name="NextJS" icon={<TbBrandNextjs />} x="18vw" y="0vw" />
-        <Skill name="Figma" icon={<FaFigma />} x="15vw" y="-12vw" />
+        <Skill name="Figma" icon={<FaFigma />} x="8vw" y="-7vw" />
         <Skill name="Ruby" icon={<DiRuby />} x="-0vw" y="5vw" />
         <Skill name="Tailwind CSS" icon={<SiTailwindcss />} x="-25vw" y="15vw" />
         <Skill name="NodeJS" icon={<FaNodeJs />} x="0vw" y="-20vw" />
