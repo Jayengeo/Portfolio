@@ -46,11 +46,11 @@ const Skills = () => {
         </motion.div>
         <Skill name="CSS" icon={<FaCss3 />} x="-5vw" y="-10vw" />
         <Skill name="HTML" icon={<FaHtml5 />} x="-20vw" y="2vw" />
-        <Skill name="Javascript" icon={<IoLogoJavascript />} x="-0vw" y="5vw" />
+        <Skill name="Javascript" icon={<IoLogoJavascript />} x="-8vw" y="0vw"  />
         <Skill name="ReactJS" icon={<RiReactjsFill />} x="0vw" y="12vw" />
         <Skill name="NextJS" icon={<TbBrandNextjs />} x="-20vw" y="-15vw" />
         <Skill name="Figma" icon={<FaFigma />} x="15vw" y="-12vw" />
-        <Skill name="Ruby" icon={<DiRuby />} x="15vw" y="15vw" />
+        <Skill name="Ruby" icon={<DiRuby />} x="-0vw" y="5vw" />
         <Skill name="Tailwind CSS" icon={<SiTailwindcss />} x="-25vw" y="15vw" />
         <Skill name="NodeJS" icon={<FaNodeJs />} x="0vw" y="-20vw" />
         <Skill name="Typescript" icon={<SiTypescript />} x="8vw" y="0vw" />
