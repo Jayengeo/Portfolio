@@ -44,7 +44,7 @@ const Skills = () => {
         >
           <FaCode size={25} />
         </motion.div>
-        <Skill name="CSS" icon={<FaCss3 />} x="-5vw" y="-10vw" />
+        <Skill name="CSS" icon={<FaCss3 />} x="-7vw" y="-7vw" />
         <Skill name="HTML" icon={<FaHtml5 />} x="-20vw" y="2vw" />
         <Skill name="Javascript" icon={<IoLogoJavascript />} x="-8vw" y="0vw"  />
         <Skill name="ReactJS" icon={<RiReactjsFill />} x="0vw" y="12vw" />
