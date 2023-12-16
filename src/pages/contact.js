@@ -66,24 +66,24 @@ const Contact = () => {
               <input
                 type="text"
                 name="user_name"
-                className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light  p-6 dark:bg-dark dark:border-light mb-4"
+                className="w-full rounded-br-2x1 rounded-3xl border-2 border-solid border-dark bg-light  p-6 dark:bg-dark dark:border-light mb-4"
               />
 
               <label className="mt-4">Email</label>
               <input
                 type="email"
                 name="user_email"
-                className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light p-6 dark:bg-dark dark:border-light mb-4"
+                className="w-full rounded-br-2x1 rounded-3xl border-2 border-solid border-dark bg-light p-6 dark:bg-dark dark:border-light mb-4"
               />
 
               <label className="mt-4">Message</label>
               <textarea
                 name="message"
-                className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light p-12 dark:bg-dark dark:border-light mb-4"
+                className="w-full rounded-br-2x1 rounded-3xl border-2 border-solid border-dark bg-light p-12 dark:bg-dark dark:border-light mb-4"
               />
               <div className="flex justify-center">
                 <motion.div
-                  className="flex flex-row items-center justify-center w-1/4 rounded-br-2x1 rounded-3xl border border-solid border-dark dark:border-light cursor-pointer "
+                  className="flex flex-row items-center justify-center w-1/4 rounded-br-2x1 rounded-3xl border-2 border-solid border-dark dark:border-light cursor-pointer "
                   whileHover={{ scale: 1.05 }}
                 >
                   <GoPaperAirplane size={24} />
