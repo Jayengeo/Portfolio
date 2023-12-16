@@ -81,15 +81,15 @@ const Contact = () => {
                 name="message"
                 className="w-full rounded-br-2x1 rounded-3xl border border-solid border-dark bg-light p-12 dark:bg-dark dark:border-light mb-4"
               />
-              <div className="flex flex-row items-center justify-center rounded-br-2x1 rounded-3xl border border-solid border-dark dark:border-light">
+              <motion.div className="flex flex-row items-center justify-center  rounded-br-2x1 rounded-3xl border border-solid border-dark dark:border-light cursor-pointer " whileHover={{ scale: 1.05 }}>
                 <GoPaperAirplane />
-                <motion.input
+                <input
                   type="submit"
                   value="Send"
-                  className=" mt-2 p-4 cursor-pointer "
-                  whileHover={{ scale: 1.05 }}
+                  className=" mt-2 p-4 cursor-pointer  "
+                  
                 />
-              </div>
+              </motion.div>
             </form>
           </div>
         </Layouts>
