@@ -62,21 +62,21 @@ const Contact = () => {
               className="relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light px-10"
             >
               <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
-              <label className="mt-4 ">Name</label>
+              <label className="mt-4 text-xl ">Name</label>
               <input
                 type="text"
                 name="user_name"
                 className="w-full rounded-br-2x1 rounded-3xl border-2 border-solid border-dark bg-light  p-6 dark:bg-dark dark:border-light my-4"
               />
 
-              <label className="mt-4">Email</label>
+              <label className="mt-4 text-xl ">Email</label>
               <input
                 type="email"
                 name="user_email"
                 className="w-full rounded-br-2x1 rounded-3xl border-2 border-solid border-dark bg-light p-6 dark:bg-dark dark:border-light my-4"
               />
 
-              <label className="mt-4">Message</label>
+              <label className="mt-4 text-xl ">Message</label>
               <textarea
                 name="message"
                 className="w-full rounded-br-2x1 rounded-3xl border-2 border-solid border-dark bg-light p-12 dark:bg-dark dark:border-light my-4"
@@ -90,7 +90,7 @@ const Contact = () => {
                   <input
                     type="submit"
                     value="Send"
-                    className="pl-2 py-4 cursor-pointer"
+                    className="pl-2 py-4 cursor-pointer text-xl "
                   />
                 </motion.div>
               </div>
