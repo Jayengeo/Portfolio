@@ -86,7 +86,7 @@ const Contact = () => {
                   className="flex flex-row items-center justify-center w-1/4 rounded-br-2x1 rounded-3xl border border-solid border-dark dark:border-light cursor-pointer "
                   whileHover={{ scale: 1.05 }}
                 >
-                  <GoPaperAirplane />
+                  <GoPaperAirplane size={24} />
                   <input
                     type="submit"
                     value="Send"
