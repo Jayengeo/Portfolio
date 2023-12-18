@@ -16,7 +16,7 @@ const CustomLink = ({ href, title, className = "", icon }) => {
   return (
     <Link href={href} className={`${className} relative group`}>
       <div className="flex justify-between items-center ">
-        <div className="mr-1">{icon}</div>
+        <div className="mr-2">{icon}</div>
         <div>{title}</div>
       </div>
       <span
