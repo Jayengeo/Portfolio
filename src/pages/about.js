@@ -34,8 +34,8 @@ const about = () => {
         <meta name="description" content="any description" />
       </Head>
       <TransitionEffect />
-      <main className="flex w-full flex-col items-center justify-center dark:text-light">
-        <Layouts className="pt-8">
+      <main className="flex w-full flex-col items-center justify-center dark:text-light  min-h-screen">
+        <Layouts className="pt-2">
           <AnimatedText
             text="A little bit about me"
             className="mb-8 lg:!text-7x1 sm:!text-6xl xs:!text-4xl sm:mb-4"

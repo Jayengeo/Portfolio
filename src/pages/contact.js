@@ -59,7 +59,7 @@ const Contact = () => {
             </div>
             <form
               onSubmit={sendEmail}
-              className="relative  rounded-2xl border-2 border-solid border-dark bg-light p-6 dark:bg-dark dark:border-light px-10"
+              className="relative  rounded-2xl border-2 border-solid border-dark bg-light py-4 dark:bg-dark dark:border-light px-10"
             >
               <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
               <label className="mt-4 text-xl ">Name</label>
