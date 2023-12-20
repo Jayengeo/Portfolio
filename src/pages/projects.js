@@ -60,7 +60,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github, icon }) => {
             Visit Project
           </Link>
         </div>
-        {icon}
+        <div className="mt-4" size={50}>{icon}</div>
       </div>
     </article>
   );
