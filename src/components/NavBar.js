@@ -9,6 +9,7 @@ import { MdOutlineMail } from "react-icons/md";
 import { GrHomeRounded } from "react-icons/gr";
 import { BsQuestionSquare } from "react-icons/bs";
 import { FaCode } from "react-icons/fa6";
+import { FaRegQuestionCircle } from "react-icons/fa";
 
 const CustomLink = ({ href, title, className = "", icon }) => {
   const router = useRouter();
@@ -134,7 +135,7 @@ const NavBar = () => {
             href="/about"
             title="About"
             className="mx-4"
-            icon={<BsQuestionSquare />}
+            icon={<FaRegQuestionCircle />}
           />
           <CustomLink
             href="/projects"
