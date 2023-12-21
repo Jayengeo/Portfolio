@@ -60,7 +60,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github, icon }) => {
             Visit Project
           </Link>
         </div>
-        <div className="mt-4" size={50}>{icon}</div>
+        <div className="mt-4">{icon}</div>
       </div>
     </article>
   );
@@ -138,7 +138,7 @@ const projects = () => {
                 link="/"
                 type="Featured Project"
                 github="https://github.com/Jayengeo/Doggo-Dash"
-                icon={<TbBrandNextjs />}
+                icon={<TbBrandNextjs size={30} />}
               />
             </div>
             <div className="col-span-6 sm:col-span-12 ">
