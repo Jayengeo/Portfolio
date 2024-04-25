@@ -125,30 +125,30 @@ const NavBar = () => {
             )}
           </button>
         </nav>
-        <nav className="flex justify-between">
+        <nav className="flex justify-between text-lg ">
           <CustomLink
             href="/"
             title="Home"
-            className="mr-4"
-            icon={<GrHomeRounded />}
+            className="mr-4 "
+            icon={<GrHomeRounded size={24}  />}
           />
           <CustomLink
             href="/about"
             title="About"
             className="mx-4"
-            icon={<BsQuestionSquare />}
+            icon={<BsQuestionSquare size={24} />}
           />
           <CustomLink
             href="/projects"
             title="Projects"
             className="ml-4"
-            icon={<FaCode />}
+            icon={<FaCode size={24}  />}
           />
           <CustomLink
             href="/contact"
             title="Contact"
             className="ml-8"
-            icon={<MdOutlineMail />}
+            icon={<MdOutlineMail size={24}  />}
           />
         </nav>
       </div>
