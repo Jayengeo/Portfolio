@@ -1,18 +1,14 @@
-import React from "react";
+import React from 'react';
 import { motion } from "framer-motion";
-import { FaCode } from "react-icons/fa";
-import { FaCss3 } from "react-icons/fa";
-import { FaPython } from "react-icons/fa";
-import { FaFigma } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
+import { FaCode, FaCss3, FaPython, FaFigma, FaNodeJs, FaHtml5, FaSass, FaBootstrap, FaGithub } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io5";
-import { FaHtml5 } from "react-icons/fa";
 import { RiReactjsFill } from "react-icons/ri";
-import { DiRuby } from "react-icons/di";
-import { SiTypescript } from "react-icons/si";
-import { SiTailwindcss } from "react-icons/si";
-import { SiExpress } from "react-icons/si";
+import { DiRuby, DiJqueryLogo } from "react-icons/di";
+import { SiTypescript, SiTailwindcss, SiExpress, SiCanva, SiRubyonrails, SiPrisma, SiJest, SiStorybook, SiCypress, SiMocha, SiChai, SiMongodb } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { GrMysql } from "react-icons/gr";
+
 
 const Skill = ({ name, icon, x, y }) => {
   return (
@@ -56,6 +52,20 @@ const Skills = () => {
         <Skill name="Typescript" icon={<SiTypescript />} x="12vw" y="0vw" />
         <Skill name="Express" icon={<SiExpress />} x="-30vw" y="-10vw" />
         <Skill name="Python" icon={<FaPython />} x="-0vw" y="-8vw" />
+        <Skill name="SASS" icon={<FaSass />} x="20vw" y="5vw" />
+        <Skill name="Bootstrap" icon={<FaBootstrap />} x="20vw" y="-5vw" />
+        <Skill name="Ruby on Rails" icon={<SiRubyonrails />} x="18vw" y="15vw" />
+        <Skill name="Jest" icon={<SiJest />} x="28vw" y="-5vw" />
+        <Skill name="Storybook" icon={<SiStorybook />} x="-28vw" y="5vw" />
+        <Skill name="Cypress" icon={<SiCypress />} x="30vw" y="10vw" />
+        <Skill name="Mocha" icon={<SiMocha />} x="-30vw" y="15vw" />
+        <Skill name="Chai" icon={<SiChai />} x="32vw" y="-15vw" />
+        <Skill name="PostgreSQL" icon={<BiLogoPostgresql />} x="35vw" y="5vw" />
+        <Skill name="MySQL" icon={<GrMysql />} x="-35vw" y="-5vw" />
+        <Skill name="MongoDB" icon={<SiMongodb />} x="0vw" y="30vw" />
+        <Skill name="Prisma" icon={<SiPrisma />} x="10vw" y="30vw" />
+        <Skill name="Canva" icon={<SiCanva />} x="20vw" y="30vw" />
+        <Skill name="GitHub" icon={<FaGithub />} x="-10vw" y="30vw" />
       </div>
     </>
   );

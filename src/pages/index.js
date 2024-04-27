@@ -27,7 +27,7 @@ export default function Home() {
             </div>
             <div className="w-1/2 flex flex-col item-center self-center lg:w-full lg:text-center">
               <AnimatedText
-                text="Welcome!"
+                text="Hello & Welcome!"
                 className="!text-6x1 !text-left
                 xl:!text-5xl lg:!text-center lg:!text=6xl md:!text-5xl sm:!text-3xl"
               />
