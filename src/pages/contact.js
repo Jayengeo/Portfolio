@@ -44,7 +44,7 @@ const Contact = () => {
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light 2xl:">
         <Layouts className="pt-0 md:pt-16 sm:pt-8">
           <AnimatedText
-            text="Let's get in touch!"
+            text="Let's get in touch🤝"
             className=" mb-4 lg:!text-7x1 sm:!text-6xl xs:!text-4xl sm:mb-4"
           />
           <div className="flex items-center justify-between w-full lg:flex-col h-70">
